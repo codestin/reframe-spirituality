@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.edgecity.live)",
+      "Bash(find:*)",
+      "Bash(git init:*)"
+    ],
+    "deny": []
+  }
+}

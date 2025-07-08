@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reframe Spirituality - Transform Your Spiritual Journey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #fff;
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4d65ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 0 80px;
+            background: #fff;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-family: 'Space Mono', monospace;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: #000;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            position: relative;
+            height: 500px;
+            background: #f8f8f8;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #4d65ff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #3d55ef;
+            transform: translateY(-1px);
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background: #f8f8f8;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .about h2 {
+            font-family: 'Space Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #000;
+            text-align: center;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .about-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .about-card h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .about-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Timeline Section */
+        .timeline {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .timeline-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .timeline h2 {
+            font-family: 'Space Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #000;
+            text-align: center;
+        }
+
+        .timeline-scroll {
+            overflow-x: auto;
+            padding-bottom: 1rem;
+        }
+
+        .timeline-items {
+            display: flex;
+            gap: 2rem;
+            min-width: max-content;
+        }
+
+        .timeline-item {
+            min-width: 300px;
+            background: #f8f8f8;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .timeline-item h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #000;
+        }
+
+        .timeline-item .date {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 80px 0;
+            background: #f8f8f8;
+        }
+
+        .pricing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .pricing h2 {
+            font-family: 'Space Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #000;
+            text-align: center;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid #4d65ff;
+            position: relative;
+        }
+
+        .pricing-card.featured::before {
+            content: "Popular";
+            position: absolute;
+            top: -10px;
+            right: 1rem;
+            background: #4d65ff;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .pricing-card h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .price {
+            font-family: 'Space Mono', monospace;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .pricing-features li:before {
+            content: "•";
+            color: #4d65ff;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .pricing-button {
+            display: block;
+            width: 100%;
+            background: #4d65ff;
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .pricing-button:hover {
+            background: #3d55ef;
+            transform: translateY(-1px);
+        }
+
+        /* Apply Section */
+        .apply {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .apply-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .apply h2 {
+            font-family: 'Space Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #000;
+            text-align: center;
+        }
+
+        .apply p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 3rem;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .apply-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #000;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #4d65ff;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-button {
+            background: #4d65ff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background: #3d55ef;
+            transform: translateY(-1px);
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: white;
+            padding: 3rem 0;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .footer-container p {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .about h2,
+            .timeline h2,
+            .pricing h2,
+            .apply h2 {
+                font-size: 2rem;
+            }
+
+            .about-grid,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-items {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .timeline-item {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Anti-flicker */
+        .hero-image {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
+            animation-delay: 0.2s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">REFRAME SPIRITUALITY</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#timeline">Journey</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#apply">Apply</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transform Your Spiritual Journey</h1>
+                <p>Join our thriving community of spiritual seekers and discover profound growth through guided practices, meaningful connections, and transformative experiences in a supportive environment.</p>
+                <a href="#apply" class="cta-button">Start Your Journey</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=500&fit=crop" alt="Spiritual meditation and community">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2>Reframe Your Practice</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Community Connection</h3>
+                    <p>Connect with like-minded spiritual seekers from around the world. Share experiences, learn from others, and build lasting relationships in our supportive community.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Expert Guidance</h3>
+                    <p>Learn from experienced spiritual teachers and mentors who provide personalized guidance tailored to your unique spiritual path and goals.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Transformative Practices</h3>
+                    <p>Access a comprehensive library of meditation techniques, spiritual practices, and transformative exercises designed to deepen your spiritual understanding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="timeline-container">
+            <h2>Your Spiritual Journey</h2>
+            <div class="timeline-scroll">
+                <div class="timeline-items">
+                    <div class="timeline-item">
+                        <h3>Foundation</h3>
+                        <div class="date">Month 1-2</div>
+                        <p>Begin with fundamental practices and community introduction. Establish your spiritual foundation through guided meditation and basic teachings.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Exploration</h3>
+                        <div class="date">Month 3-6</div>
+                        <p>Dive deeper into various spiritual traditions and practices. Discover what resonates with your soul and begin personalized development.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Integration</h3>
+                        <div class="date">Month 6-12</div>
+                        <p>Integrate spiritual practices into daily life. Develop consistency and depth in your chosen path with ongoing mentor support.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Mastery</h3>
+                        <div class="date">12+ Months</div>
+                        <p>Achieve deeper spiritual understanding and potentially become a mentor yourself. Share your wisdom with newer community members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="pricing-container">
+            <h2>Choose Your Path</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Seeker</h3>
+                    <div class="price">$29<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Access to meditation library</li>
+                        <li>Weekly community discussions</li>
+                        <li>Monthly practice guide</li>
+                        <li>Email support</li>
+                        <li>Mobile app access</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/placeholder-seeker" class="pricing-button">Begin Journey</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>Explorer</h3>
+                    <div class="price">$79<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Everything in Seeker</li>
+                        <li>Personalized spiritual guidance</li>
+                        <li>Weekly 1-on-1 sessions</li>
+                        <li>Exclusive workshops</li>
+                        <li>Priority support</li>
+                        <li>Advanced techniques</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/placeholder-explorer" class="pricing-button">Deepen Practice</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Mystic</h3>
+                    <div class="price">$149<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Everything in Explorer</li>
+                        <li>Unlimited 1-on-1 sessions</li>
+                        <li>Monthly retreat access</li>
+                        <li>Direct mentor access</li>
+                        <li>Custom curriculum</li>
+                        <li>Leadership opportunities</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/placeholder-mystic" class="pricing-button">Master Journey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Section -->
+    <section id="apply" class="apply">
+        <div class="apply-container">
+            <h2>Ready to Begin?</h2>
+            <p>Take the first step towards transformation. Apply to join our spiritual community and start your journey of growth, connection, and discovery.</p>
+            
+            <form class="apply-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experience">Spiritual Experience Level</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select your level</option>
+                        <option value="beginner">Beginner - New to spiritual practices</option>
+                        <option value="intermediate">Intermediate - Some experience</option>
+                        <option value="advanced">Advanced - Regular practice</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="goals">What are your spiritual goals?</label>
+                    <textarea id="goals" name="goals" placeholder="Tell us about your spiritual aspirations and what you hope to achieve..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Reframe Spirituality. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        document.querySelector('.apply-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your application! We will review it and get back to you within 24 hours.');
+        });
+
+        // Anti-flicker enhancement
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>
