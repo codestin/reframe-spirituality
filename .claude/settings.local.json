@@ -3,7 +3,11 @@
     "allow": [
       "WebFetch(domain:www.edgecity.live)",
       "Bash(find:*)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(git commit:*)",
+      "WebFetch(domain:www.nsmastery.com)",
+      "WebFetch(domain:christinchong.com)",
+      "Bash(git add:*)"
     ],
     "deny": []
   }

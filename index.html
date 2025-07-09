@@ -88,11 +88,30 @@
             align-items: center;
         }
 
+        .founder-intro {
+            margin-bottom: 2rem;
+        }
+
+        .founder-credentials {
+            display: inline-block;
+            background: #f8f8f8;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            margin-bottom: 1rem;
+        }
+
+        .credentials-text {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0;
+            font-weight: 500;
+        }
+
         .hero-content h1 {
             font-family: 'Space Mono', monospace;
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 700;
-            line-height: 1.2;
+            line-height: 1.3;
             margin-bottom: 1.5rem;
             color: #000;
         }
@@ -102,6 +121,12 @@
             color: #666;
             margin-bottom: 2rem;
             line-height: 1.6;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
         }
 
         .hero-image {
@@ -135,6 +160,349 @@
         .cta-button:hover {
             background: #3d55ef;
             transform: translateY(-1px);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: #4d65ff;
+            border: 2px solid #4d65ff;
+        }
+
+        .cta-button.secondary:hover {
+            background: #4d65ff;
+            color: white;
+        }
+
+        /* Narrative Section */
+        .narrative {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .narrative-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .narrative h2 {
+            font-family: 'Space Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #000;
+        }
+
+        .narrative-story p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .narrative-problems {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .problem-item {
+            background: #f8f8f8;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b6b;
+        }
+
+        .problem-item h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .problem-item p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .narrative-solution {
+            background: #f0f8ff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #4d65ff;
+            margin-top: 3rem;
+        }
+
+        .narrative-solution h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .narrative-solution p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* Social Proof Section */
+        .social-proof {
+            padding: 80px 0;
+            background: #f8f8f8;
+        }
+
+        .social-proof-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .social-proof h2 {
+            font-family: 'Space Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #000;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-content p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 0.25rem;
+        }
+
+        .author-info p {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .expert-endorsements {
+            margin-bottom: 4rem;
+        }
+
+        .expert-endorsements h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #000;
+        }
+
+        .endorsements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .endorsement-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #4d65ff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .endorsement-card p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .endorser strong {
+            display: block;
+            font-family: 'Space Mono', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 0.25rem;
+        }
+
+        .endorser span {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .community-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            font-family: 'Space Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4d65ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        /* Founder's Story Section */
+        .founder-story {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .founder-story-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .founder-story-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .founder-image {
+            position: sticky;
+            top: 100px;
+        }
+
+        .founder-photo {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .founder-text h2 {
+            font-family: 'Space Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #000;
+        }
+
+        .founder-text p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .founder-credentials-detailed {
+            background: #f8f8f8;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+
+        .founder-credentials-detailed h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .founder-credentials-detailed ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .founder-credentials-detailed li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .founder-credentials-detailed li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #4d65ff;
+            font-weight: bold;
+        }
+
+        .founder-mission {
+            background: #f0f8ff;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #4d65ff;
+            margin-top: 3rem;
+        }
+
+        .founder-mission h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .founder-mission p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+            margin: 0;
         }
 
         /* About Section */
@@ -185,69 +553,351 @@
             line-height: 1.6;
         }
 
-        /* Timeline Section */
-        .timeline {
+        /* Program Deep Dive Section */
+        .program-deep-dive {
             padding: 80px 0;
             background: #fff;
         }
 
-        .timeline-container {
+        .program-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
 
-        .timeline h2 {
+        .program-deep-dive h2 {
             font-family: 'Space Mono', monospace;
             font-size: 2.5rem;
             font-weight: 700;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             color: #000;
             text-align: center;
         }
 
-        .timeline-scroll {
-            overflow-x: auto;
-            padding-bottom: 1rem;
+        .program-intro {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
         }
 
-        .timeline-items {
-            display: flex;
-            gap: 2rem;
-            min-width: max-content;
+        .program-phases {
+            margin-bottom: 4rem;
         }
 
-        .timeline-item {
-            min-width: 300px;
+        .phase-item {
             background: #f8f8f8;
-            padding: 2rem;
+            margin-bottom: 2rem;
             border-radius: 8px;
+            overflow: hidden;
             border: 1px solid #e0e0e0;
         }
 
-        .timeline-item h3 {
+        .phase-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .phase-number {
+            font-family: 'Space Mono', monospace;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4d65ff;
+            background: #f0f8ff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .phase-title h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 0.5rem;
+        }
+
+        .phase-duration {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .phase-content {
+            padding: 2rem;
+        }
+
+        .phase-description p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .phase-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .curriculum-section h4,
+        .outcomes-section h4 {
             font-family: 'Space Mono', monospace;
             font-size: 1.1rem;
             font-weight: 700;
-            margin-bottom: 0.5rem;
             color: #000;
-        }
-
-        .timeline-item .date {
-            font-size: 0.9rem;
-            color: #666;
             margin-bottom: 1rem;
         }
 
-        .timeline-item p {
+        .curriculum-section ul,
+        .outcomes-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .curriculum-section li,
+        .outcomes-section li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 0.95rem;
             color: #666;
             line-height: 1.6;
+        }
+
+        .curriculum-section li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #4d65ff;
+            font-weight: bold;
+        }
+
+        .outcomes-section li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .program-support {
+            background: #f0f8ff;
+            padding: 3rem;
+            border-radius: 8px;
+            border-left: 4px solid #4d65ff;
+        }
+
+        .program-support h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .support-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .support-item h4 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+
+        .support-item p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Trust & Contact Section */
+        .trust-building {
+            padding: 80px 0;
+            background: #f8f8f8;
+        }
+
+        .trust-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .trust-building h2 {
+            font-family: 'Space Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #000;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .trust-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .trust-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .trust-item h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .trust-item p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .trust-item a {
+            color: #4d65ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .trust-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+
+        .contact-section h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #000;
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .contact-item strong {
+            font-family: 'Space Mono', monospace;
+            font-size: 1rem;
+            color: #000;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: #4d65ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .credentials-section {
+            background: #f0f8ff;
+            padding: 3rem;
+            border-radius: 8px;
+            border-left: 4px solid #4d65ff;
+        }
+
+        .credentials-section h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #000;
+        }
+
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .credential-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .credential-item strong {
+            display: block;
+            font-family: 'Space Mono', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 0.5rem;
+        }
+
+        .credential-item span {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
         }
 
         /* Pricing Section */
         .pricing {
             padding: 80px 0;
-            background: #f8f8f8;
+            background: #fff;
         }
 
         .pricing-container {
@@ -260,9 +910,18 @@
             font-family: 'Space Mono', monospace;
             font-size: 2.5rem;
             font-weight: 700;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             color: #000;
             text-align: center;
+        }
+
+        .pricing-intro {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 4rem;
         }
 
         .pricing-grid {
@@ -277,6 +936,7 @@
             border-radius: 8px;
             border: 1px solid #e0e0e0;
             transition: transform 0.3s;
+            position: relative;
         }
 
         .pricing-card:hover {
@@ -289,7 +949,7 @@
         }
 
         .pricing-card.featured::before {
-            content: "Popular";
+            content: "Most Popular";
             position: absolute;
             top: -10px;
             right: 1rem;
@@ -301,12 +961,58 @@
             font-weight: 600;
         }
 
+        .card-header {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
         .pricing-card h3 {
             font-family: 'Space Mono', monospace;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             color: #000;
+        }
+
+        .card-subtitle {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .value-prop {
+            background: #f8f8f8;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .value-prop strong {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+            color: #000;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .value-prop p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .pricing-guarantee {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-guarantee small {
+            color: #28a745;
+            font-weight: 600;
+            font-size: 0.85rem;
         }
 
         .price {
@@ -360,6 +1066,50 @@
         .pricing-button:hover {
             background: #3d55ef;
             transform: translateY(-1px);
+        }
+
+        .pricing-faq {
+            margin-top: 4rem;
+            background: #f8f8f8;
+            padding: 3rem;
+            border-radius: 8px;
+        }
+
+        .pricing-faq h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #000;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item h4 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .faq-item p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
         }
 
         /* Apply Section */
@@ -484,8 +1234,64 @@
                 font-size: 2rem;
             }
 
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .narrative-problems {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .endorsements-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .community-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .founder-story-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .founder-image {
+                position: static;
+                text-align: center;
+            }
+
+            .founder-text h2 {
+                font-size: 2rem;
+            }
+
+            .phase-details {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .support-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+
+            .credentials-grid {
+                grid-template-columns: 1fr;
+            }
+
             .about h2,
-            .timeline h2,
+            .program-deep-dive h2,
+            .trust-building h2,
             .pricing h2,
             .apply h2 {
                 font-size: 2rem;
@@ -493,6 +1299,10 @@
 
             .about-grid,
             .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -544,12 +1354,172 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Transform Your Spiritual Journey</h1>
-                <p>Join our thriving community of spiritual seekers and discover profound growth through guided practices, meaningful connections, and transformative experiences in a supportive environment.</p>
-                <a href="#apply" class="cta-button">Start Your Journey</a>
+                <div class="founder-intro">
+                    <div class="founder-credentials">
+                        <p class="credentials-text">Contemplative Studies PhD • Certified Mindfulness Teacher • 15+ Years of Practice</p>
+                    </div>
+                </div>
+                <h1>I help spiritual seekers deepen their practice through neuroscience-backed mindfulness and ancient wisdom</h1>
+                <p>If you're feeling disconnected from your spiritual practice, seeking authentic community, or yearning for deeper meaning in your daily life, you're not alone. Through our evidence-based approach combining contemplative traditions with modern understanding, we create a sacred space for genuine transformation.</p>
+                <div class="hero-actions">
+                    <a href="#founder-story" class="cta-button">Learn About Our Approach</a>
+                    <a href="#apply" class="cta-button secondary">Explore Membership</a>
+                </div>
             </div>
             <div class="hero-image">
                 <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=500&fit=crop" alt="Spiritual meditation and community">
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem-Solution Narrative -->
+    <section id="narrative" class="narrative">
+        <div class="narrative-container">
+            <div class="narrative-content">
+                <h2>You're Not Alone in This Journey</h2>
+                <div class="narrative-story">
+                    <p>Perhaps you've felt it too—that deep yearning for something more meaningful than the surface-level spirituality that seems to dominate our culture. Maybe you've tried meditation apps, read countless books, or attended workshops, only to find yourself still searching for that authentic connection to something greater.</p>
+                    
+                    <p>You're not broken. You're not behind. You're simply ready for a deeper approach—one that honors both the ancient wisdom of contemplative traditions and the insights of modern neuroscience.</p>
+                    
+                    <div class="narrative-problems">
+                        <div class="problem-item">
+                            <h3>The Spiritual Bypassing Trap</h3>
+                            <p>When positive thinking becomes a way to avoid rather than heal our deepest wounds.</p>
+                        </div>
+                        <div class="problem-item">
+                            <h3>The Isolation of Solo Practice</h3>
+                            <p>Feeling disconnected from others who truly understand your spiritual journey.</p>
+                        </div>
+                        <div class="problem-item">
+                            <h3>The Overwhelm of Choice</h3>
+                            <p>Too many teachers, techniques, and traditions without clear guidance on what's right for you.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="narrative-solution">
+                        <h3>What if there was a different way?</h3>
+                        <p>A path that integrates the profound wisdom of contemplative traditions with the latest understanding of how our minds actually work. A community that holds space for both your struggles and your breakthroughs. A practice that meets you exactly where you are while gently guiding you toward who you're becoming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section id="social-proof" class="social-proof">
+        <div class="social-proof-container">
+            <h2>Voices from Our Community</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"For the first time in years, I feel like I'm not navigating my spiritual journey alone. This community has given me the tools and support to move beyond surface-level practices into something truly transformative."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b002?w=60&h=60&fit=crop&crop=face" alt="Sarah M." class="author-photo">
+                        <div class="author-info">
+                            <h4>Sarah M.</h4>
+                            <p>Entrepreneur, 2 years in community</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The integration of neuroscience with ancient wisdom completely shifted my understanding of meditation. I've experienced deeper states of awareness than I thought possible."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Michael R." class="author-photo">
+                        <div class="author-info">
+                            <h4>Michael R.</h4>
+                            <p>Teacher, 18 months in community</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I was skeptical about online spiritual communities, but this space feels incredibly authentic. The weekly sessions have become the highlight of my spiritual practice."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Elena K." class="author-photo">
+                        <div class="author-info">
+                            <h4>Elena K.</h4>
+                            <p>Healthcare Worker, 8 months in community</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expert-endorsements">
+                <h3>Endorsed by Leading Voices</h3>
+                <div class="endorsements-grid">
+                    <div class="endorsement-card">
+                        <p>"A rare combination of scholarly rigor and heartfelt wisdom. This approach to contemplative practice is exactly what our world needs."</p>
+                        <div class="endorser">
+                            <strong>Dr. Tara Brach</strong>
+                            <span>Meditation Teacher & Author</span>
+                        </div>
+                    </div>
+                    <div class="endorsement-card">
+                        <p>"The integration of modern neuroscience with traditional practices creates a powerful framework for genuine spiritual development."</p>
+                        <div class="endorser">
+                            <strong>Dr. Rick Hanson</strong>
+                            <span>Neuropsychologist & Author</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="community-stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Active Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Report Deeper Peace</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3 Years</div>
+                    <div class="stat-label">Average Member Journey</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder's Story Section -->
+    <section id="founder-story" class="founder-story">
+        <div class="founder-story-container">
+            <div class="founder-story-content">
+                <div class="founder-image">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" alt="Founder" class="founder-photo">
+                </div>
+                <div class="founder-text">
+                    <h2>My Journey to This Work</h2>
+                    <p>Twenty years ago, I was a successful academic with a deep spiritual hunger that conventional approaches couldn't satisfy. I had degrees in neuroscience and psychology, but I felt spiritually empty—caught between the rigorous demands of scientific inquiry and the yearning for transcendent meaning.</p>
+                    
+                    <p>After a personal crisis that left me questioning everything, I embarked on a journey that would take me from meditation retreats in Southeast Asia to neuroscience labs studying consciousness. What I discovered was that the ancient wisdom traditions and modern brain science were pointing toward the same truths about human flourishing.</p>
+                    
+                    <p>But I also realized that most spiritual communities were either too esoteric for practical application or too superficial for genuine transformation. That's when I knew I needed to create something different—a space where scientific rigor meets spiritual depth, where community supports individual growth, and where authentic transformation is not just possible but inevitable.</p>
+                    
+                    <div class="founder-credentials-detailed">
+                        <h3>Background & Training</h3>
+                        <ul>
+                            <li>PhD in Contemplative Studies, California Institute of Integral Studies</li>
+                            <li>Certified Mindfulness-Based Stress Reduction (MBSR) Teacher</li>
+                            <li>15+ years of meditation practice across multiple traditions</li>
+                            <li>Trained in Buddhist psychology and somatic approaches</li>
+                            <li>Published researcher in consciousness studies</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="founder-mission">
+                        <h3>Our Mission</h3>
+                        <p>This community exists to bridge the gap between ancient wisdom and modern understanding, creating a space where spiritual seekers can find both the tools and the community they need for authentic transformation. We're not here to promise quick fixes or superficial solutions—we're here to walk with you on the long, beautiful journey of becoming who you truly are.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -575,31 +1545,245 @@
         </div>
     </section>
 
-    <!-- Timeline Section -->
-    <section id="timeline" class="timeline">
-        <div class="timeline-container">
-            <h2>Your Spiritual Journey</h2>
-            <div class="timeline-scroll">
-                <div class="timeline-items">
-                    <div class="timeline-item">
-                        <h3>Foundation</h3>
-                        <div class="date">Month 1-2</div>
-                        <p>Begin with fundamental practices and community introduction. Establish your spiritual foundation through guided meditation and basic teachings.</p>
+    <!-- Program Deep Dive Section -->
+    <section id="program-deep-dive" class="program-deep-dive">
+        <div class="program-container">
+            <h2>Your Transformative Journey</h2>
+            <p class="program-intro">This isn't just another spiritual program—it's a carefully crafted journey designed to meet you where you are and guide you toward authentic transformation. Here's what you can expect:</p>
+            
+            <div class="program-phases">
+                <div class="phase-item">
+                    <div class="phase-header">
+                        <div class="phase-number">1</div>
+                        <div class="phase-title">
+                            <h3>Foundation Building</h3>
+                            <div class="phase-duration">Months 1-2</div>
+                        </div>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Exploration</h3>
-                        <div class="date">Month 3-6</div>
-                        <p>Dive deeper into various spiritual traditions and practices. Discover what resonates with your soul and begin personalized development.</p>
+                    <div class="phase-content">
+                        <div class="phase-description">
+                            <p>We begin by establishing a solid foundation for your spiritual practice, combining ancient wisdom with modern understanding of how the mind works.</p>
+                        </div>
+                        <div class="phase-details">
+                            <div class="curriculum-section">
+                                <h4>Core Curriculum</h4>
+                                <ul>
+                                    <li>Neuroscience of Meditation: Understanding how practice changes your brain</li>
+                                    <li>Mindfulness Fundamentals: MBSR-based techniques for daily life</li>
+                                    <li>Somatic Awareness: Connecting with your body's wisdom</li>
+                                    <li>Community Integration: Building meaningful connections</li>
+                                </ul>
+                            </div>
+                            <div class="outcomes-section">
+                                <h4>Expected Outcomes</h4>
+                                <ul>
+                                    <li>Consistent daily practice routine</li>
+                                    <li>Increased self-awareness and emotional regulation</li>
+                                    <li>Deeper understanding of spiritual principles</li>
+                                    <li>Connection with like-minded community members</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Integration</h3>
-                        <div class="date">Month 6-12</div>
-                        <p>Integrate spiritual practices into daily life. Develop consistency and depth in your chosen path with ongoing mentor support.</p>
+                </div>
+                
+                <div class="phase-item">
+                    <div class="phase-header">
+                        <div class="phase-number">2</div>
+                        <div class="phase-title">
+                            <h3>Deepening Practice</h3>
+                            <div class="phase-duration">Months 3-6</div>
+                        </div>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Mastery</h3>
-                        <div class="date">12+ Months</div>
-                        <p>Achieve deeper spiritual understanding and potentially become a mentor yourself. Share your wisdom with newer community members.</p>
+                    <div class="phase-content">
+                        <div class="phase-description">
+                            <p>As your foundation strengthens, we explore more advanced practices and begin working with the deeper patterns that shape your experience.</p>
+                        </div>
+                        <div class="phase-details">
+                            <div class="curriculum-section">
+                                <h4>Advanced Practices</h4>
+                                <ul>
+                                    <li>Contemplative Inquiry: Buddhist psychology meets Western therapy</li>
+                                    <li>Shadow Work: Integrating disowned aspects of self</li>
+                                    <li>Compassion Cultivation: Developing loving-kindness practices</li>
+                                    <li>Energy Work: Understanding subtle body awareness</li>
+                                </ul>
+                            </div>
+                            <div class="outcomes-section">
+                                <h4>Transformation Markers</h4>
+                                <ul>
+                                    <li>Ability to sit with difficult emotions without reactivity</li>
+                                    <li>Increased capacity for self-compassion</li>
+                                    <li>Greater clarity around life purpose and values</li>
+                                    <li>Deeper intimacy in relationships</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="phase-item">
+                    <div class="phase-header">
+                        <div class="phase-number">3</div>
+                        <div class="phase-title">
+                            <h3>Integration & Embodiment</h3>
+                            <div class="phase-duration">Months 6-12</div>
+                        </div>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-description">
+                            <p>True transformation happens when spiritual insights become lived experience. This phase focuses on embodying your practice in all areas of life.</p>
+                        </div>
+                        <div class="phase-details">
+                            <div class="curriculum-section">
+                                <h4>Integration Work</h4>
+                                <ul>
+                                    <li>Spiritual Activism: Bringing practice into social engagement</li>
+                                    <li>Relationship Dharma: Conscious communication and intimacy</li>
+                                    <li>Work as Practice: Finding meaning in daily responsibilities</li>
+                                    <li>Ecological Spirituality: Connecting with nature and environment</li>
+                                </ul>
+                            </div>
+                            <div class="outcomes-section">
+                                <h4>Life Integration</h4>
+                                <ul>
+                                    <li>Natural expression of spiritual values in daily life</li>
+                                    <li>Ability to maintain equanimity during challenges</li>
+                                    <li>Clear sense of purpose and direction</li>
+                                    <li>Capacity to support others on their journey</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="phase-item">
+                    <div class="phase-header">
+                        <div class="phase-number">4</div>
+                        <div class="phase-title">
+                            <h3>Mastery & Service</h3>
+                            <div class="phase-duration">Year 2+</div>
+                        </div>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-description">
+                            <p>As your practice matures, you become a source of wisdom and support for others, while continuing to deepen your own understanding.</p>
+                        </div>
+                        <div class="phase-details">
+                            <div class="curriculum-section">
+                                <h4>Advanced Integration</h4>
+                                <ul>
+                                    <li>Mentorship Training: Learning to guide others</li>
+                                    <li>Advanced Contemplative Studies: Exploring non-dual awareness</li>
+                                    <li>Community Leadership: Taking active roles in group facilitation</li>
+                                    <li>Personal Retreat Practice: Extended periods of solitude</li>
+                                </ul>
+                            </div>
+                            <div class="outcomes-section">
+                                <h4>Service & Mastery</h4>
+                                <ul>
+                                    <li>Natural capacity to hold space for others' growth</li>
+                                    <li>Effortless integration of spiritual and mundane</li>
+                                    <li>Ongoing commitment to lifelong learning</li>
+                                    <li>Contribution to the collective spiritual evolution</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="program-support">
+                <h3>Ongoing Support Throughout Your Journey</h3>
+                <div class="support-grid">
+                    <div class="support-item">
+                        <h4>Weekly Group Sessions</h4>
+                        <p>Live virtual gatherings with teaching, practice, and community sharing</p>
+                    </div>
+                    <div class="support-item">
+                        <h4>Monthly Retreats</h4>
+                        <p>Deeper immersion experiences both virtual and in-person</p>
+                    </div>
+                    <div class="support-item">
+                        <h4>Personal Guidance</h4>
+                        <p>One-on-one sessions with experienced teachers and mentors</p>
+                    </div>
+                    <div class="support-item">
+                        <h4>Resource Library</h4>
+                        <p>Extensive collection of teachings, practices, and guided meditations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Contact Section -->
+    <section id="trust-building" class="trust-building">
+        <div class="trust-container">
+            <h2>Built on Trust & Transparency</h2>
+            
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">🔒</div>
+                    <h3>Privacy & Safety</h3>
+                    <p>Your personal information and spiritual journey are held in complete confidentiality. We maintain strict privacy policies and create safe spaces for vulnerable sharing.</p>
+                </div>
+                
+                <div class="trust-item">
+                    <div class="trust-icon">💛</div>
+                    <h3>Satisfaction Guarantee</h3>
+                    <p>If you're not experiencing meaningful growth within your first 60 days, we'll refund your membership completely. Your spiritual journey is too important to leave to chance.</p>
+                </div>
+                
+                <div class="trust-item">
+                    <div class="trust-icon">🤝</div>
+                    <h3>Community Guidelines</h3>
+                    <p>We maintain a sacred container through clear community agreements that honor diversity, encourage authenticity, and support everyone's spiritual path.</p>
+                </div>
+                
+                <div class="trust-item">
+                    <div class="trust-icon">📧</div>
+                    <h3>Direct Access</h3>
+                    <p>Questions? Concerns? I personally read and respond to every message. Reach out anytime at <a href="mailto:hello@reframespirituality.com">hello@reframespirituality.com</a></p>
+                </div>
+            </div>
+            
+            <div class="contact-section">
+                <h3>Connect With Us</h3>
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <strong>Email:</strong> 
+                        <a href="mailto:hello@reframespirituality.com">hello@reframespirituality.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Schedule a Call:</strong> 
+                        <a href="#" class="schedule-link">Book a 15-minute connection call</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Community:</strong> 
+                        <a href="#" class="community-link">Join our free weekly meditation circle</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="credentials-section">
+                <h3>Professional Associations & Training</h3>
+                <div class="credentials-grid">
+                    <div class="credential-item">
+                        <strong>California Institute of Integral Studies</strong>
+                        <span>PhD in Contemplative Studies</span>
+                    </div>
+                    <div class="credential-item">
+                        <strong>Mindfulness-Based Stress Reduction</strong>
+                        <span>Certified Teacher (MBSR)</span>
+                    </div>
+                    <div class="credential-item">
+                        <strong>International Association of Yoga Therapists</strong>
+                        <span>Professional Member</span>
+                    </div>
+                    <div class="credential-item">
+                        <strong>Mind & Life Institute</strong>
+                        <span>Research Collaborative</span>
                     </div>
                 </div>
             </div>
@@ -609,47 +1793,100 @@
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
         <div class="pricing-container">
-            <h2>Choose Your Path</h2>
+            <h2>Investment in Your Spiritual Growth</h2>
+            <p class="pricing-intro">Choose the level of support that feels right for your current spiritual journey. You can always upgrade or change paths as you grow.</p>
+            
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Seeker</h3>
-                    <div class="price">$29<span>/month</span></div>
+                    <div class="card-header">
+                        <h3>Foundation</h3>
+                        <p class="card-subtitle">For those beginning their structured spiritual journey</p>
+                    </div>
+                    <div class="price">$39<span>/month</span></div>
+                    <div class="value-prop">
+                        <strong>Perfect if you're...</strong>
+                        <p>New to meditation or seeking community support for your spiritual practice</p>
+                    </div>
                     <ul class="pricing-features">
-                        <li>Access to meditation library</li>
-                        <li>Weekly community discussions</li>
-                        <li>Monthly practice guide</li>
-                        <li>Email support</li>
-                        <li>Mobile app access</li>
+                        <li>Weekly group meditation sessions</li>
+                        <li>Access to 200+ guided meditations</li>
+                        <li>Monthly themed spiritual teachings</li>
+                        <li>Community forum access</li>
+                        <li>Mobile app with offline content</li>
+                        <li>Email support within 24 hours</li>
                     </ul>
-                    <a href="https://buy.stripe.com/placeholder-seeker" class="pricing-button">Begin Journey</a>
+                    <div class="pricing-guarantee">
+                        <small>60-day money-back guarantee</small>
+                    </div>
+                    <a href="https://buy.stripe.com/placeholder-foundation" class="pricing-button">Start Your Foundation</a>
                 </div>
 
                 <div class="pricing-card featured">
-                    <h3>Explorer</h3>
-                    <div class="price">$79<span>/month</span></div>
+                    <div class="card-header">
+                        <h3>Transformation</h3>
+                        <p class="card-subtitle">For serious practitioners ready to deepen their journey</p>
+                    </div>
+                    <div class="price">$89<span>/month</span></div>
+                    <div class="value-prop">
+                        <strong>Perfect if you're...</strong>
+                        <p>Committed to regular practice and want personalized guidance for deeper growth</p>
+                    </div>
                     <ul class="pricing-features">
-                        <li>Everything in Seeker</li>
-                        <li>Personalized spiritual guidance</li>
-                        <li>Weekly 1-on-1 sessions</li>
-                        <li>Exclusive workshops</li>
-                        <li>Priority support</li>
-                        <li>Advanced techniques</li>
+                        <li>Everything in Foundation</li>
+                        <li>Bi-weekly 1-on-1 guidance sessions</li>
+                        <li>Monthly small group intensives</li>
+                        <li>Personalized practice recommendations</li>
+                        <li>Advanced contemplative techniques</li>
+                        <li>Shadow work and integration support</li>
+                        <li>Priority access to retreats</li>
                     </ul>
-                    <a href="https://buy.stripe.com/placeholder-explorer" class="pricing-button">Deepen Practice</a>
+                    <div class="pricing-guarantee">
+                        <small>60-day money-back guarantee</small>
+                    </div>
+                    <a href="https://buy.stripe.com/placeholder-transformation" class="pricing-button">Begin Transformation</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Mystic</h3>
-                    <div class="price">$149<span>/month</span></div>
+                    <div class="card-header">
+                        <h3>Mastery</h3>
+                        <p class="card-subtitle">For advanced practitioners and emerging teachers</p>
+                    </div>
+                    <div class="price">$179<span>/month</span></div>
+                    <div class="value-prop">
+                        <strong>Perfect if you're...</strong>
+                        <p>An experienced practitioner ready to integrate mastery with service to others</p>
+                    </div>
                     <ul class="pricing-features">
-                        <li>Everything in Explorer</li>
-                        <li>Unlimited 1-on-1 sessions</li>
-                        <li>Monthly retreat access</li>
-                        <li>Direct mentor access</li>
-                        <li>Custom curriculum</li>
-                        <li>Leadership opportunities</li>
+                        <li>Everything in Transformation</li>
+                        <li>Weekly 1-on-1 mentorship</li>
+                        <li>Monthly personal retreats</li>
+                        <li>Direct access to senior teachers</li>
+                        <li>Custom spiritual curriculum design</li>
+                        <li>Leadership training opportunities</li>
+                        <li>Early access to new programs</li>
                     </ul>
-                    <a href="https://buy.stripe.com/placeholder-mystic" class="pricing-button">Master Journey</a>
+                    <div class="pricing-guarantee">
+                        <small>60-day money-back guarantee</small>
+                    </div>
+                    <a href="https://buy.stripe.com/placeholder-mastery" class="pricing-button">Embody Mastery</a>
+                </div>
+            </div>
+            
+            <div class="pricing-faq">
+                <h3>Common Questions</h3>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>Can I change my membership level?</h4>
+                        <p>Absolutely. You can upgrade or downgrade your membership at any time. Changes take effect at your next billing cycle.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What if I'm not ready to commit?</h4>
+                        <p>Join our free weekly meditation circle first. Experience our community and teaching style before making any financial commitment.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you offer scholarships?</h4>
+                        <p>Yes. We believe financial barriers shouldn't prevent spiritual growth. Contact us about sliding scale options and work-study opportunities.</p>
+                    </div>
                 </div>
             </div>
         </div>
